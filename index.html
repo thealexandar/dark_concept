@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dark Concept</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.7.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <a class="navbar-brand ml-3" href="#">Dark Concept</a>
+        <ul class="nav justify-content-end mr-3">
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="far fa-envelope"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
+            </li>
+            <li class="nav-item ml-1">
+                <div class="img">
+                    <img src="img/68.jpg" alt="">
+                </div>
+
+            </li>
+        </ul>
+    </nav>
+    <wrapper class="wrapper row">
+        <sidebar class="sidebar col-md-2">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#"><i class="fas fa-tachometer-alt mr-2"></i>Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-user-friends  mr-2"></i>Users</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-chart-pie mr-2"></i>Statistics</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-check-circle mr-2"></i>Orders</a>
+                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-envelope mr-2"></i>Messages</a>
+                </li>
+            </ul>
+        </sidebar>
+        <main class="main col-md-10">
+            <div class="row top-cards">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div id="chartSmallLeft"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">User Client</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <i class="fab fa-chrome mr-1"></i>
+                                    Google Chrome
+                                    <span class="float-right">53%</span>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fab fa-firefox mr-1"></i>
+                                    Firefox
+                                    <span class="float-right">34%</span>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fab fa-edge mr-1"></i>
+                                    Edge
+                                    <span class="float-right">53%</span>
+                                </li>
+                                <li class="list-group-item border-0">
+                                    <i class="fab fa-safari mr-1"></i>
+                                    Safari
+                                    <span class="float-right">53%</span>
+                                </li>
+                            </ul>
+                            <div class="text-center">
+                                <a href="#" class="btn mt-1 ml-auto">Show All</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div id="chartSmallRight"></div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--top cards end-->
+            <div class="row mid-cards"><!--mid cards-->
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            users
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-4"><i class="fas fa-users"></i></div>
+                                <div class="col-8"><h2>159</h2></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            orders
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-4"><i class="fas fa-shopping-bag"></i></div>
+                                <div class="col-8"><h2>768</h2></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            delivered
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-4"><i class="fas fa-clipboard-check"></i></div>
+                                <div class="col-8"><h2>465</h2></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            verified
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-4"><i class="fas fa-users"></i></div>
+                                <div class="col-8"><h2>500</h2></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--mid cards end-->
+            <div class="row bot-card"><!--bot card-->
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <div id="chartdiv"></div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--bot cards end-->
+        </main>
+    </wrapper>
+
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+
+    <!-- Resources -->
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/material.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/dark.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/chartSmallLeft.js"></script>
+    <script src="js/chartSmallRight.js"></script>
+
+</body>
+</html>
